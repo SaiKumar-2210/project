@@ -14,7 +14,7 @@ if st.button("Submit"):
     for intent, response in INTENTS.items():
         if intent in user_input.lower():
             st.write(f"Response for '{intent}':")
-            st.write(response(df))
+            st.write(response())
             break
     else:
         st.write("Sorry, I don't understand that question. Please try again.")
